@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Moment - 11:11</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient-to-br from-purple-900 to-pink-900">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white bg-opacity-90 backdrop-blur-md z-50 px-6 py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="home.html" class="text-purple-800 hover:text-purple-600 transition-colors">
+                <i class="fas fa-home mr-2"></i> Home
+            </a>
+            <div class="space-x-4">
+                <a href="timeline.html" class="text-purple-800 hover:text-purple-600 transition-colors">
+                    Our Story <i class="fas fa-clock ml-1"></i>
+                </a>
+                <a href="proposal.html" class="text-purple-800 hover:text-purple-600 transition-colors">
+                    Proposal <i class="fas fa-ring ml-1"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Emotional Transition Section -->
+    <section class="min-h-screen flex items-center justify-center pt-20 pb-20">
+        <div class="container mx-auto px-4 text-center">
+            <div class="fade-in-text">
+                <p class="text-2xl md:text-3xl mb-8 italic text-pink-200">Every moment... every memory...</p>
+                <p class="text-2xl md:text-3xl mb-8 italic text-pink-300">was leading to one time...</p>
+                <p class="text-4xl md:text-6xl font-bold mb-12 handwritten text-yellow-300 animate-pulse">11:11</p>
+                
+                <!-- Romantic Message Box -->
+                <div class="bg-white bg-opacity-10 backdrop-blur-md rounded-3xl p-8 md:p-12 max-w-3xl mx-auto mb-12 border-2 border-pink-300 border-opacity-30">
+                    <p class="text-xl md:text-2xl text-pink-100 leading-relaxed mb-4 handwritten">
+                        From the moment I met you, my life changed forever.
+                    </p>
+                    <p class="text-xl md:text-2xl text-pink-200 leading-relaxed mb-4 handwritten">
+                        You are my sunshine, my dream, my everything.
+                    </p>
+                    <p class="text-2xl md:text-3xl font-bold text-pink-300 handwritten">
+                        Forever yours, Swaraj ❤️
+                    </p>
+                </div>
+                
+                <!-- Digital Clock Animation -->
+                <div id="clock" class="clock-animation mb-12 text-yellow-300">11:10</div>
+                
+                <!-- Navigation Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="timeline.html" class="bg-white bg-opacity-20 backdrop-blur-md text-pink-800 px-6 py-3 rounded-full font-semibold transition-all transform hover:scale-105 border-2 border-pink-300 border-opacity-50">
+                        <i class="fas fa-arrow-left mr-2"></i> Back to Our Story
+                    </a>
+                    <!-- <a href="proposal.html" class="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-8 py-4 rounded-full font-semibold transition-all transform hover:scale-110 shadow-lg hover:shadow-xl">
+                        <i class="fas fa-heart mr-2"></i> Celebrate Our Love 💕
+                        <i class="fas fa-heart ml-2"></i>
+                    </a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fireworks Container -->
+    <div id="fireworksContainer"></div>
+
+    <!-- Background Music -->
+    <audio id="romanticMusic" loop>
+        <source src="romantic-song.mp3" type="audio/mpeg">
+        <source src="romantic-song.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <!-- Music Controls -->
+    <div class="fixed bottom-4 right-4 z-50">
+        <button id="musicToggle" class="bg-white bg-opacity-80 backdrop-blur-md text-purple-800 p-3 rounded-full shadow-lg hover:bg-opacity-100 transition-all">
+            <i class="fas fa-music"></i>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Proposal - Will You Marry Me?</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient-to-br from-pink-100 to-purple-100">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white bg-opacity-90 backdrop-blur-md z-50 px-6 py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="home.html" class="text-purple-800 hover:text-purple-600 transition-colors">
+                <i class="fas fa-home mr-2"></i> Home
+            </a>
+            <div class="space-x-4">
+                <a href="timeline.html" class="text-purple-800 hover:text-purple-600 transition-colors">
+                    Our Story <i class="fas fa-clock ml-1"></i>
+                </a>
+                <a href="transition.html" class="text-purple-800 hover:text-purple-600 transition-colors">
+                    11:11 <i class="fas fa-clock ml-1"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Final Proposal Section -->
+    <section class="min-h-screen flex items-center justify-center pt-20 pb-20">
+        <div class="container mx-auto px-4 text-center">
+            <!-- Big I Love You Message -->
+            <div class="text-center">
+                <!-- Floating Hearts Around Message -->
+                <div class="relative inline-block">
+                    <div class="absolute -top-10 -left-10 text-6xl animate-pulse">💕</div>
+                    <div class="absolute -top-10 -right-10 text-6xl animate-pulse" style="animation-delay: 0.5s;">💖</div>
+                    <div class="absolute -bottom-10 -left-10 text-6xl animate-pulse" style="animation-delay: 1s;">�</div>
+                    <div class="absolute -bottom-10 -right-10 text-6xl animate-pulse" style="animation-delay: 1.5s;">�</div>
+                    
+                    <!-- Main Love Declaration -->
+                    <h1 class="text-6xl md:text-8xl lg:text-9xl font-bold mb-8 handwritten bg-gradient-to-r from-pink-500 via-purple-600 to-red-500 bg-clip-text text-transparent animate-pulse">
+                        I Love You
+                    </h1>
+                    
+                    <!-- RANI Name -->
+                    <h2 class="text-4xl md:text-6xl font-bold mb-12 text-purple-800 handwritten">
+                        RANI 💕
+                    </h2>
+                </div>
+                
+                <!-- Romantic Message -->
+                <div class="bg-white bg-opacity-20 backdrop-blur-md rounded-3xl p-8 md:p-12 max-w-3xl mx-auto mb-12 border-2 border-white border-opacity-30">
+                    <p class="text-xl md:text-2xl text-white leading-relaxed mb-8">
+                        From the moment I met you, my life changed forever.<br>
+                        You are my sunshine, my dream, my everything.<br>
+                        <span class="font-bold text-2xl text-yellow-300 handwritten">Forever yours, Swaraj ❤️</span>
+                    </p>
+                </div>
+                
+                <!-- Celebration Button -->
+                <div class="space-y-4">
+                    <button id="celebrateBtn" class="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-12 py-6 rounded-full text-2xl font-bold transition-all transform hover:scale-110 shadow-lg hover:shadow-xl animate-pulse">
+                        <span class="flex items-center">
+                            <i class="fas fa-heart mr-3"></i>
+                            Celebrate Our Love �
+                            <i class="fas fa-heart ml-3"></i>
+                        </span>
+                    </button>
+                    <div class="text-lg text-white opacity-80 animate-pulse">Click to celebrate our forever</div>
+                </div>
+                
+                <!-- Navigation after celebration -->
+                <div id="afterProposal" class="hidden mt-12">
+                    <a href="home.html" class="bg-white bg-opacity-20 backdrop-blur-md text-white px-8 py-4 rounded-full font-semibold hover:bg-opacity-30 transition-all transform hover:scale-105 border-2 border-white border-opacity-30">
+                        <i class="fas fa-home mr-2"></i> Start Our Journey Together
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fireworks Container -->
+    <div id="fireworksContainer"></div>
+
+    <!-- Background Music -->
+    <audio id="romanticMusic" loop>
+        <source src="romantic-song.mp3" type="audio/mpeg">
+        <source src="romantic-song.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <!-- Music Controls -->
+    <div class="fixed bottom-4 right-4 z-50">
+        <button id="musicToggle" class="bg-white bg-opacity-80 backdrop-blur-md text-purple-800 p-3 rounded-full shadow-lg hover:bg-opacity-100 transition-all">
+            <i class="fas fa-music"></i>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

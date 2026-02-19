@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Letter - My Heart's Words</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient-to-br from-pink-50 to-purple-50">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white bg-opacity-90 backdrop-blur-md z-50 px-6 py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="home.html" class="text-purple-800 hover:text-purple-600 transition-colors">
+                <i class="fas fa-home mr-2"></i> Home
+            </a>
+            <div class="space-x-4">
+                <a href="rani.html" class="text-purple-800 hover:text-purple-600 transition-colors">
+                    RANI <i class="fas fa-user ml-1"></i>
+                </a>
+                <a href="timeline.html" class="text-purple-800 hover:text-purple-600 transition-colors">
+                    Our Story <i class="fas fa-clock ml-1"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Love Letter Section -->
+    <section class="min-h-screen flex items-center justify-center pt-20 pb-20">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-12 relative overflow-hidden">
+                <!-- Decorative hearts -->
+                <div class="absolute top-4 right-4 text-pink-200 text-4xl opacity-50">💕</div>
+                <div class="absolute bottom-4 left-4 text-pink-200 text-4xl opacity-50">💖</div>
+                
+                <h3 class="text-3xl md:text-4xl font-bold text-center mb-8 handwritten text-purple-800">My Love Letter</h3>
+                <div class="love-letter-text text-center">
+                    <p class="mb-6">My dearest RANI,</p>
+                    <p class="mb-6">From the moment I first saw you, my world changed. Your smile lights up my darkest days, your voice is the melody I long to hear, and your presence is the peace I've been searching for.</p>
+                    <p class="mb-6">Every moment with you feels like a dream I never want to wake up from. You've shown me what true love means, what happiness feels like, and what it means to have a home in someone's heart.</p>
+                    <p class="mb-6">I promise to cherish you, to protect you, to make you laugh, and to love you with all that I am, today and forever.</p>
+                    <p class="text-right mt-8">All my love,<br>Forever yours,<br>Swaraj</p>
+                </div>
+                
+                <!-- Navigation Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mt-12">
+                    <a href="rani.html" class="bg-gray-500 hover:bg-gray-600 text-white px-6 py-3 rounded-full font-semibold transition-all transform hover:scale-105">
+                        <i class="fas fa-arrow-left mr-2"></i> Back to RANI
+                    </a>
+                    <a href="timeline.html" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-full font-semibold transition-all transform hover:scale-105">
+                        Our Story <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Background Music -->
+    <audio id="romanticMusic" loop>
+        <source src="romantic-song.mp3" type="audio/mpeg">
+        <source src="romantic-song.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <!-- Music Controls -->
+    <div class="fixed bottom-4 right-4 z-50">
+        <button id="musicToggle" class="bg-white bg-opacity-80 backdrop-blur-md text-purple-800 p-3 rounded-full shadow-lg hover:bg-opacity-100 transition-all">
+            <i class="fas fa-music"></i>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

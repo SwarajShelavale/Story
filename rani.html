@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RANI - The One Who Makes Everything Magical</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient-to-br from-pink-100 to-purple-100">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white bg-opacity-90 backdrop-blur-md z-50 px-6 py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="home.html" class="text-purple-800 hover:text-purple-600 transition-colors">
+                <i class="fas fa-home mr-2"></i> Home
+            </a>
+            <div class="space-x-4">
+                <a href="love-letter.html" class="text-purple-800 hover:text-purple-600 transition-colors">
+                    Love Letter <i class="fas fa-envelope ml-1"></i>
+                </a>
+                <a href="timeline.html" class="text-purple-800 hover:text-purple-600 transition-colors">
+                    Our Story <i class="fas fa-clock ml-1"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- RANI Section -->
+    <section class="min-h-screen flex items-center justify-center pt-20 pb-20">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-8">
+                <div class="w-48 h-48 mx-auto rounded-full overflow-hidden border-8 border-white shadow-2xl">
+                    <img src="image.png" alt="RANI" class="w-full h-full object-cover">
+                </div>
+            </div>
+            <h2 class="text-5xl md:text-7xl font-bold text-purple-800 mb-4 handwritten">RANI</h2>
+            <p class="text-xl text-purple-600 italic mb-8">The one who makes every moment magical</p>
+            
+            <!-- Navigation Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="love-letter.html" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-full font-semibold transition-all transform hover:scale-105">
+                    <i class="fas fa-heart mr-2"></i> Read My Love Letter
+                </a>
+                <a href="timeline.html" class="bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-full font-semibold transition-all transform hover:scale-105">
+                    <i class="fas fa-history mr-2"></i> Our Journey Together
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Background Music -->
+    <audio id="romanticMusic" loop>
+        <source src="romantic-song.mp3" type="audio/mpeg">
+        <source src="romantic-song.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <!-- Music Controls -->
+    <div class="fixed bottom-4 right-4 z-50">
+        <button id="musicToggle" class="bg-white bg-opacity-80 backdrop-blur-md text-purple-800 p-3 rounded-full shadow-lg hover:bg-opacity-100 transition-all">
+            <i class="fas fa-music"></i>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
